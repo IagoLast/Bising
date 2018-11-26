@@ -12,7 +12,10 @@
   <meta property="og:title" content="Bising">
   <meta property="og:description" content="Visor alternativo para bicing.cat">
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Golden_boy_bike.svg/1597px-Golden_boy_bike.svg.png">
-  <link rel="manifest" href="manifest.json"></link>
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </link>
   <style>
     *{
       box-sizing: border-box;
@@ -43,9 +46,22 @@
       font-size: 1.2em;
     }
 
+    .header__menu {
+      cursor: pointer;
+      position: absolute;
+      left: 32px;
+      border: 0;
+      padding: 0;
+    }
+
     #autocomplete {
       width: 100%;
       height: 32px;
+      padding: 4px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      margin-top: 8px;
+
     }
     
     #map {
@@ -64,16 +80,36 @@
     }
 
     aside {
+      padding: 12px 32px;
       position: absolute;
       right: 100%;
       width: 100%;
-      height: 100%;
+      height: calc(100% - 108px);
       z-index: 2;
       background: white;
+      transition: right 0.2s;
+    }
+
+    aside section {
+      padding-bottom: 16px;
+    }
+
+    .legend p {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .legend img {
+      margin-right: 4px;
     }
 
     aside.visible {
       right: 0;
+    }
+
+    .aside__label {
+      display: block;
+      font-weight: bold;
     }
  
   </style>
@@ -83,10 +119,22 @@
 
 <body>
   <header>
+    <button class="header__menu">
+      <img src="./images/menu.svg" alt="menu">
+    </button>
     <h1>Bising</h1>
   </header>
   <aside class="aside">
-    <input id="autocomplete" placeholder="Enter your address" type="text"></input>
+    <section>
+        <label class="aside__label" for="autocomplete">Destino:</label>
+        <input id="autocomplete" placeholder="Enter your address" type="text"></input>
+    </section>
+    <section class="legend">
+      <h4>Leyenda</h4>
+      <p><img width="16px" height="16px" src="/images/user.svg" alt="user logo"> Tu posición.</p>
+      <p><img width="16px" height="16px" src="/images/pin.svg" alt="station logo"> Estación Bicing. (Bicicletas / huecos)</p>
+      <p><img width="16px" height="16px" src="/images/destination.svg" alt="destination logo"> Destino.</p>
+    </section>
   </aside>
   <div id="map"></div>
   <footer>

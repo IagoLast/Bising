@@ -1,7 +1,9 @@
-import './map.service.js';
+import './menu-service.js';
+
 import mapService from './map.service.js';
 import markerService from './marker.service.js';
 import apiService from './api.service.js';
+
 
 (async () => {
   const map = mapService.initMap();
@@ -9,10 +11,6 @@ import apiService from './api.service.js';
   _updateStations(map, stations);
 
   map.addListener('bounds_changed', () => _updateStations(map, stations));
-
-  new google.maps.places.Autocomplete((document.getElementById('autocomplete')), {
-    types: ['geocode']
-  });
 })();
 
 

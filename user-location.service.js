@@ -7,7 +7,7 @@ const OPTIONS = {
 export function trackUser(map, position) {
   const userMarker = new google.maps.Marker({
     icon: {
-      url: 'https://image.flaticon.com/icons/svg/34/34665.svg',
+      url: './images/user.svg',
       scaledSize: new google.maps.Size(32, 32),
     },
     map: map,
