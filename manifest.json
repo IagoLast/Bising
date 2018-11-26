@@ -6,10 +6,10 @@
     "display": "standalone",
     "start_url": "https://iagolast.github.io/Bising/",
     "short_name": "Bising",
-    "theme_color": "transparent",
+    "theme_color": "#aa0518",
     "description": "Visor alternativo para bicing.cat",
     "orientation": "any",
-    "background_color": "transparent",
+    "background_color": "white",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
