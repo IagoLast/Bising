@@ -3,7 +3,7 @@
     "lang": "tl",
     "name": "Bising",
     "scope": "/Bising/",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "https://iagolast.github.io/Bising/",
     "short_name": "Bising",
     "theme_color": "transparent",
