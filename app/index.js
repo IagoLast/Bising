@@ -1,8 +1,8 @@
-import './menu-service.js';
+import './services/menu-service.js';
 
-import mapService from './map.service.js';
-import markerService from './marker.service.js';
-import apiService from './api.service.js';
+import mapService from './services/map.service.js';
+import markerService from './services/marker.service.js';
+import apiService from './services/api.service.js';
 
 
 (async () => {
