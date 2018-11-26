@@ -12,14 +12,18 @@
   <meta property="og:title" content="Bising">
   <meta property="og:description" content="Visor alternativo para bicing.cat">
   <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Golden_boy_bike.svg/1597px-Golden_boy_bike.svg.png">
+  <link rel="manifest" href="manifest.json"></link>
   <style>
     *{
       box-sizing: border-box;
     } 
-    
+    html {
+      height: 100%;
+    }
+
     body {
       position: relative;
-      height: 100vh;
+      height: 100%;
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
@@ -38,6 +42,11 @@
       font-weight: bold;
       font-size: 1.2em;
     }
+
+    #autocomplete {
+      width: 100%;
+      height: 32px;
+    }
     
     #map {
       height: calc(100% - 108px);
@@ -53,9 +62,22 @@
     footer a {
       color: #aa0518;
     }
+
+    aside {
+      position: absolute;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background: white;
+    }
+
+    aside.visible {
+      right: 0;
+    }
  
   </style>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtsP3m7SEyAhmPuFXvNe-nhvd_FZb08c8"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtsP3m7SEyAhmPuFXvNe-nhvd_FZb08c8&libraries=places"></script>
   <script type="module" src="./index.js"></script>
 </head>
 
@@ -63,10 +85,14 @@
   <header>
     <h1>Bising</h1>
   </header>
+  <aside class="aside">
+    <input id="autocomplete" placeholder="Enter your address" type="text"></input>
+  </aside>
   <div id="map"></div>
   <footer>
     <p>Another <a href="https://iagolast.github.io">@IagoLast</a> pet project.</p>
   </footer>
+  <script src="./service-worker-register.js"></script>
 </body>
 
 </html>

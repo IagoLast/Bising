@@ -7,6 +7,7 @@ export function initMap() {
       lat: 41.38,
       lng: 2.16
     },
+    gestureHandling: 'greedy',
     zoom: 16,
     disableDefaultUI: true,
   });

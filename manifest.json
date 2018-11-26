@@ -1,0 +1,112 @@
+{
+    "dir": "ltr",
+    "lang": "tl",
+    "name": "Bising",
+    "scope": "/Bising/",
+    "display": "browser",
+    "start_url": "https://iagolast.github.io/Bising/",
+    "short_name": "Bising",
+    "theme_color": "transparent",
+    "description": "Visor alternativo para bicing.cat",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/d7defcc9-5845-f71a-42d6-e0840cab8f64.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/e5307d52-b3e6-a598-9b6c-96fd75ad164b.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/3e9a610b-4a94-12ca-d556-70aa00ed4227.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/bda772bb-b234-971a-271d-e54c51e3f5a2.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ec327cd8-3156-87b3-a197-10815e5879c4.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/228c411b-81c3-8e72-b3c3-320d2e78a7c6.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/dcd0fa45-a187-fdf4-0222-563c00219877.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8610df61-59f2-2302-0b86-d49d28247cc3.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/936f5699-c8f6-6cca-a1dd-6d1bbe9aaea8.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ba8cf8c8-ec5b-d560-9a00-6dad3403ca7e.webPlatform.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/02d06719-1859-6147-db32-e0efc96e1a1e.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ba5b9d67-289c-4961-cc78-e72580179b7b.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8cd0abf7-2537-21d7-f134-d5f40a5a7ad6.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/982bc466-5d05-d880-77fe-9fc78e01ab00.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/5244218d-b8a6-e80d-aadf-e55d45eee93b.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8005b670-260b-7b5d-04ff-4d307674ff1e.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ced3df7a-e658-6a6f-6561-3b876adc4ace.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/0a42dc8f-03b9-37eb-e87e-c087cc6e3727.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/8172f3bb-551b-f63c-1517-e0e7dd6dec9c.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ]
+}
