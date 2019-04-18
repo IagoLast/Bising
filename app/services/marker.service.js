@@ -17,7 +17,7 @@ function _createMarker(station) {
     id: station.id,
     position,
     label: _selectLabel(station),
-    visible: (station.type == 'BIKE' && station.status == 'OPN'),
+    visible: (station.type == 'BIKE' && station.status == 1),
   });
 
   drawnStations[station.id] = marker;
@@ -26,7 +26,7 @@ function _createMarker(station) {
 }
 
 function _updateMarker(marker, station) {
-  marker.visible = (station.type == 'BIKE' && station.status == 'OPN')
+  marker.visible = (station.type == 'BIKE' && station.status == 1)
   const newLabel = _selectLabel(station);
   if (marker.getLabel() !== newLabel) {
     marker.setLabel(newLabel);

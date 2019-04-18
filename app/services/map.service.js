@@ -1,4 +1,5 @@
 import userLocationService from './user-location.service.js';
+import config from '../config.js';
 
 let map;
 let destinationMarker;
@@ -15,7 +16,7 @@ export function initMap() {
     disableDefaultUI: true,
   });
 
-  map.data.loadGeoJson('https://wt-4c17b3c888c61e0fdd8b150c4789e9c0-0.sandbox.auth0-extend.com/bicing/lines');
+  map.data.loadGeoJson(config.LINES_ENDPOINT);
 
   map.data.setStyle({
     strokeColor: 'green',
